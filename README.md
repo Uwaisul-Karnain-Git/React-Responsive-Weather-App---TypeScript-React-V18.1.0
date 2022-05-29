@@ -44,4 +44,3 @@ Mobile Screen
 2. https://openweathermap.org/api/geocoding-api
 3. https://en.wikipedia.org/wiki/List_of_Australian_capital_cities
 
-

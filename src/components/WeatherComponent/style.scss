@@ -1,0 +1,84 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectContainer {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 1.25rem;
+    margin-bottom: 3.75rem;
+
+    // To Apply responsiveness for Smaller screens
+    @media screen and (max-width:768px){
+        margin-bottom: 0.625rem;
+    }
+}
+
+.wdContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    // To Apply responsiveness for Smaller screens
+    @media screen and (max-width:768px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+.label-normal {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: nor;
+}
+
+.label-bold {
+    font-family: sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.topLabelPositioning {
+    margin-right: 15px;
+}
+
+.imgStyle {
+    width: 17.875rem;
+    height: 11rem;
+}
+
+.cellContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // To Apply responsiveness for Smaller screens
+    @media screen and (max-width:768px){
+        margin-top: 2.5rem;
+    }
+}
+
+.cityNameStyle {
+    margin: 20px 0 20px 0;
+}
+
+.tempDetailsDiv {
+    margin: 20px 30px 20px 30px;
+}
+
+.redFont {
+    color: red;
+}
+
+.greenFont {
+    color: green;
+}
+
