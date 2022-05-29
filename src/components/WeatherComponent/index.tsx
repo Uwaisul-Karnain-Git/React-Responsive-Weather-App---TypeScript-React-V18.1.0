@@ -87,7 +87,8 @@ const WeatherComponent = () => {
             <div className="selectContainer">
                 <span className="label-bold topLabelPositioning">Select the City:</span>
 
-                <select onChange={(e) => handleDropdownChange(e)}>
+                <select defaultValue="" onChange={(e) => handleDropdownChange(e)}>
+                    <option disabled={true} value="">Select a City</option>
                     {cities.map((city: any) => (
                         <option key={city.id} value={city.id}>{city.name}</option>
                     ))}
