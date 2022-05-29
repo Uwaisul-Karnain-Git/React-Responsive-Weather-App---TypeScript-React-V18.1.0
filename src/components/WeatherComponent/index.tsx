@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./style.scss";
+import City from '../../../data/City';
 import sydney from '../../images/sydney.jpeg';
 import melbourne from '../../images/melbourne.jpeg';
 import brisbane from '../../images/brisbane.jpeg';
@@ -12,7 +13,7 @@ import darwin from '../../images/darwin.jpeg';
 const WeatherComponent = () => {
     const GET_API_URL = 'http://localhost:3500/cities';
     const [cities, setCities] = useState<any[]>(() => []);
-    const [selectedCity, setSelectedCity] = useState<any>(() => null);
+    const [selectedCity, setSelectedCity] = useState<City>();
     const [weatherInfo, setWeatherInfo] = useState<any>(() => null);
 
     useEffect(() => {
@@ -43,11 +44,10 @@ const WeatherComponent = () => {
 
     const fetchCityWiseWeatherInfomation = async () => {
         try {
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${selectedCity.latitude}&lon=${selectedCity.longitude}&appid=599176e4fa1aaeb4dffbc11e12d971b6`);
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${selectedCity?.latitude}&lon=${selectedCity?.longitude}&appid=599176e4fa1aaeb4dffbc11e12d971b6`);
             if (!response.ok) throw Error('Did not receive weather information');
             const weatherData = await response.json();
 
-            console.log(weatherData);
             setWeatherInfo(weatherData);
         } catch (err) {
             console.log(err);
