@@ -34,10 +34,10 @@ Current weather information of that selected city will be populated below as the
 # Screenshots of the final outcome:
 
 Desktop Screen
-![](Images/desktop_Screen.PNG)
+![](Images/desktop_Screen.png)
 
 Mobile Screen
-![](Images/mobile_Screen.PNG)
+![](Images/mobile_Screen.png)
 
 # References:
 1. https://openweathermap.org/current
