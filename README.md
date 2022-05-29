@@ -3,8 +3,20 @@
 
 # Execute following Node commands to Setup the application:
 
+a) Clone the repository
 
-a) Install and run the json server:
+git clone https://github.com/Uwaisul-Karnain-Git/React-Responsive-Weather-App---TypeScript-React-V18.1.0.git
+(The above command is for macOS. For Linux, wrap https url with double quotes)
+
+b) Install the necessary packages and run the React app:
+
+Generate 'node_modules'
+npm install
+
+Run React app
+npm start
+
+c) On a new terminal window, install and run the json server:
 
 To install the json server:
 npx i json-server
@@ -15,13 +27,7 @@ npx json-server -p 3500 -w data/capitalCitiesData.json
 json-server url: 
 http://localhost:3500/cities
 
-b) On a new terminal window, install the necessary packages and run the React app:
 
-Install Saas
-npm i sass --save-dev
-
-Run React app
-npm start
 
 # How the app works and its features:
 
