@@ -6,7 +6,6 @@
 a) Clone the repository
 
 git clone https://github.com/Uwaisul-Karnain-Git/React-Responsive-Weather-App---TypeScript-React-V18.1.0.git
-(The above command is for macOS. For Linux, wrap https url with double quotes)
 
 b) Install the necessary packages and run the React app:
 
